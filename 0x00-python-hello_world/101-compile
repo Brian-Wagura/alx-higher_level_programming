@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+import os
+import sys
+import compileall
+
+if "PYFILE" not in os.environ:
+	sys.exit("Error: PYFILE environment variable is not set.")
+pyfile = os.environ["PYFILE"]
+pycfile = pyfile + 'c'
+compileall.compile_file(pyfile, legacy=True)
+print(f"Compilation successful. Output file: {pycfile}")
