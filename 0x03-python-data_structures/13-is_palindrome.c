@@ -1,6 +1,6 @@
 #include "lists.h"
 
-listint_t *reverse_listint(listint **head);
+listint_t *reverse_listint(listint_t **head);
 int is_palindrome(listint_t **head);
 
 /**
@@ -10,7 +10,7 @@ int is_palindrome(listint_t **head);
  * Return: pointer to head of reversed list
  */
 
-listint_t *reverse_listint(listint **head)
+listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *node = *head, *next, *prev = NULL;
 
