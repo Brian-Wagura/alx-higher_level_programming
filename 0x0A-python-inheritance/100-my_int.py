@@ -3,6 +3,7 @@
 class MyInt
 """
 
+
 class MyInt(int):
     """
     Rebel version of an integer, perfect for opposite day
