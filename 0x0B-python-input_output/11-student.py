@@ -17,8 +17,15 @@ class Student:
         Retrieves a dictionary representation
         of a Student instance
         """
-        if (type(attrs) == list and
-                all(type(element) == str for element in attrs)):
-            return {k: getattr(self, k) for k in attrs
-                    if hasattr(self, k)}
-        return self.__dict__
+        if attrs is None:
+            return self.__dict__
+        else:
+            return {attr: getattr(self, attr) 
+                    for attr in attrs if hasattr(self, attr)}
+
+    def reload_from_json(self, json):
+        """
+        Replaces all attributes of the Student instance
+        """
+        for key, value in json.items():
+            setattr(self, key, value)
