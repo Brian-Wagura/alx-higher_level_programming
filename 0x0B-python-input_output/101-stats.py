@@ -3,7 +3,8 @@
 Reads from stdin line by line and computes metrics.
 
 This script reads input from standard input (stdin) line by line and computes
-metrics such as total file size, count of different HTTP status codes, and total
+metrics such as total file size, count of different HTTP status codes,
+and total
 number of lines processed.
 
 Metrics computed:
