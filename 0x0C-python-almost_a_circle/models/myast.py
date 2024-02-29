@@ -9,5 +9,5 @@ def check_docstrings(filename):
             print(f"Missing docstring for: {node.name}")
 
 # Specify the Python file you want to check
-filename = "square.py"
+filename = "rectangle.py"
 check_docstrings(filename)
